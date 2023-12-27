@@ -7,6 +7,6 @@ int main() {
         cout<<a*b;
         return 0;
     }
-    cout<<b%a;
+    cout<<a%b;
     return 0;
 }
