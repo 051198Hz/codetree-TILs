@@ -7,7 +7,7 @@ int main() {
     int age2;
     char sex2;
     cin>>age2>>sex2;
-    if( (age1>=19 || age2>=19) && (sex1=='M'||sex2=='M')){
+    if( (sex1=='M' && age1>=19 ) || (sex2=='M'&& age2>=19)){
         cout<<1;
         return 0;
     }
