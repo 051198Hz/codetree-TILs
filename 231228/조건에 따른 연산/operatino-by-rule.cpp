@@ -4,8 +4,8 @@ int main() {
     int n;
     std::cin>>n;
 
-    for(int i = 0; ; i++){
-        if(n%2){
+    for(int i = 1; ; i++){
+        if(!(n%2)){
             n*=3;
             n+=1;
         }else{
