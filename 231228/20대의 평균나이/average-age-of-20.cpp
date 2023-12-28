@@ -4,10 +4,9 @@ int main() {
     double avg = 0;
     int cnt = 0;
     while(1){
-        
         int tmp;
         std::cin>>tmp;
-        if(tmp >= 30){
+        if(tmp > 29 || tmp < 20){
             break;
         }
         cnt++;
