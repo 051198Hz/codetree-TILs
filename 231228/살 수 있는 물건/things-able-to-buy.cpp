@@ -19,7 +19,7 @@ int main() {
 
     vector<thing> things;
     things.push_back(thing{"book",3000 });
-    things.push_back(thing{"mask",5000 });
+    things.push_back(thing{"mask",1000 });
 
     sort(things.begin(), things.end(), cmp); 
 
