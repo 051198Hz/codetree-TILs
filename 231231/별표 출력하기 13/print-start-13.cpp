@@ -12,6 +12,7 @@ int main() {
 
     if(n==1){
         cout<<"*"<<"\n"<<"*";
+        return 0;
     }else{
         for(int i = n; i > 1; i--){
             v.push_back(i);
