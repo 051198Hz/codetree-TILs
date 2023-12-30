@@ -5,29 +5,41 @@ int main() {
     int n;
     cin>>n;
 
-    for(int i = -1 * n + 1; i< n; i++){
-            if( i!= 0 ){
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-2-i; ++j) {
+            cout<<" ";
+        }
+        for (int j = 0; j <=2*i + 1; j++) {
+            if(j%2 == 0){
                 cout<<" ";
             }else{
-                cout<<"*";  
-            }
-        for(int j = 0; j < (n*2)-1 - abs(i); j++){
-            if (i%2 == 0){
-                if(j%2 ==0){
-                    cout<<" ";
-                }else{
-                    cout<<"*";
-                }
-            }else{
-                if(j%2 ==0){
-                    cout<<"*";
-                }else{
-                    cout<<" ";
-                }
+                cout<<"*";
             }
         }
         cout<<"\n";
     }
-    
+
+    for (int i = 0; i < (2*n); ++i) {
+        if(i %2 == 0){
+            cout<<"*";
+        }else{
+            cout<<" ";
+        }
+    }
+    cout<<"\n";
+
+    for (int i = n-1; i > 0; i--) {
+        for (int j = abs(i-n); j >1; j--) {
+            cout<<" ";
+        }
+        for (int j = 2*i; j >0; j--) {
+            if(j%2 == 0){
+                cout<<" ";
+            }else{
+                cout<<"*";
+            }
+        }
+        cout<<"\n";
+    }
     return 0;
 }
