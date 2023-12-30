@@ -11,7 +11,7 @@ int main() {
             }else{
                 cout<<"*";  
             }
-        for(int j = 0; j < 5 - abs(i); j++){
+        for(int j = 0; j < (n*2)-1 - abs(i); j++){
             if (i%2 == 0){
                 if(j%2 ==0){
                     cout<<" ";
