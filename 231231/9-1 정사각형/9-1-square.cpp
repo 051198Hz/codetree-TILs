@@ -8,7 +8,7 @@ int main() {
         return 0;
     }
     int cnt = 0;
-        for(int j = 9; j < n*n; j--){
+        for(int j = 9; ; j--){
             if(cnt==n*n) break;
             if(j==0) j=9;
             cout<<j;
