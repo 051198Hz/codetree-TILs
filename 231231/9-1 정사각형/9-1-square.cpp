@@ -3,6 +3,10 @@ using namespace std;
 int main() {
 
     int n; cin>>n;
+    if(n==1){
+        cout<<9;
+        return 0;
+    }
     int cnt = 0;
         for(int j = 9; j < n*n; j--){
             if(cnt==n*n) break;
