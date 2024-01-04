@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     // 여기에 코드를 작성해주세요.
     int a,b,cnt[1002] = {0,}; cin>>a>>b;
-    for(int i = 0; a>=1; i++){
+    for(int i = 0; a>1; i++){
         // cout<<a%b<<" ";
         cnt[a%b]++;
         a = a / b;
