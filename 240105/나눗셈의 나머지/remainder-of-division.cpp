@@ -7,7 +7,7 @@ int main() {
         cnt[a%b]++;
         a = a / b;
     }
-    for(int i = 0; i<10; i++){
+    for(int i = 0; i<11; i++){
         cnt[11] += cnt[i]*cnt[i];
     }
     cout<<cnt[11];
