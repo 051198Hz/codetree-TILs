@@ -6,7 +6,7 @@ int main() {
 
     int cnt = 0,sum = 0;
 
-    string strs[10];
+    string strs[20];
     for(int i = 0; i<n; i++){
         cin>>strs[i];
     }
